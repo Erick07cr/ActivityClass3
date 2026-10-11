@@ -79,6 +79,14 @@ void app_main(void)
 
         print_matrix("Addition (A + B)", Res);
 
+        // 2. (A * B)
+        Res[0][0] = A[0][0] * B[0][0] + A[0][1] * B[1][0];
+        Res[0][1] = A[0][0] * B[0][1] + A[0][1] * B[1][1];
+        Res[1][0] = A[1][0] * B[0][0] + A[1][1] * B[1][0];
+        Res[1][1] = A[1][0] * B[0][1] + A[1][1] * B[1][1];
+
+        print_matrix("Multiplication (A * B)", Res);
+
         printf("====================================\n\n");
     }
 }
